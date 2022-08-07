@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "vue-cli-service serve --hot",
+    "build": "vue-cli-service build",
+    "component": "vue-cli-service build --target wc --name weather-widget ./src/main.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-draggable-next": "^2.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
