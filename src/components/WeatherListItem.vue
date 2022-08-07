@@ -8,8 +8,8 @@
             <img
                 width="50"
                 height="50"
-                :src="'http://openweathermap.org/img/wn/'+ weather.weather[0].icon +'.png'"
-                :srcset="'http://openweathermap.org/img/wn/'+ weather.weather[0].icon +'@2x.png 2x'"
+                :src="'https://openweathermap.org/img/wn/'+ weather.weather[0].icon +'.png'"
+                :srcset="'https://openweathermap.org/img/wn/'+ weather.weather[0].icon +'@2x.png 2x'"
                 :alt="weather.weather.description"
             >
             <div class="weather-widget__temp">
