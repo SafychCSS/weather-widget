@@ -46,7 +46,7 @@
         emits: ['removeLocation'],
 
         setup() {
-            const VUE_APP_API_KEY = ref('4974807139fce1eb73651a44bbee39ec'); // move .env
+            const API_KEY = ref('4974807139fce1eb73651a44bbee39ec');
             const lat = ref('34.0522');
             const lon = ref('-118.2437');
             const isEditing = ref(false);
@@ -78,7 +78,7 @@
 
             const getWeather = async (query) => {
                 try {
-                    const weather = await fetchWeather(query, VUE_APP_API_KEY.value);
+                    const weather = await fetchWeather(query, API_KEY.value);
                     if (locationIds.value.includes(weather.id)) {
                         alert(
                             `${weather.name} has already been added. Choose another location`,
@@ -141,7 +141,7 @@
             });
 
             return {
-                VUE_APP_API_KEY,
+                API_KEY,
                 weathers,
                 isEditing,
                 currentTheme,
@@ -180,7 +180,7 @@
             if(clientLocations) {
                 const locationsPromise = clientLocations.map(name => {
                     const query = `q=${name}`;
-                    return fetchWeather(query, this.VUE_APP_API_KEY);
+                    return fetchWeather(query, this.API_KEY);
                 });
                 const result = await Promise.all(locationsPromise);
                 result.forEach(item => this.weathers.push({ ...item }));
