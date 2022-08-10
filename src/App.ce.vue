@@ -46,7 +46,7 @@
         emits: ['removeLocation'],
 
         setup() {
-            const API_KEY = ref('4974807139fce1eb73651a44bbee39ec');
+            const API_KEY = '4974807139fce1eb73651a44bbee39ec';
             const lat = ref('34.0522');
             const lon = ref('-118.2437');
             const isEditing = ref(false);
@@ -78,7 +78,7 @@
 
             const getWeather = async (query) => {
                 try {
-                    const weather = await fetchWeather(query, API_KEY.value);
+                    const weather = await fetchWeather(query, API_KEY);
                     if (locationIds.value.includes(weather.id)) {
                         alert(
                             `${weather.name} has already been added. Choose another location`,
