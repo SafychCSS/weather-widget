@@ -21,9 +21,7 @@ Implement a widget that displays the weather in the specified cities.
    until they change the computer or clean the storage
 5. By default, on initial opening, request the current user’s location and display the weather in their city
 
-
-   ![Screenshot20220815at165727.png](./assets/1660572608319-Screenshot%202022-08-15%20at%2016.57.27.png)
-   ![Screenshot20220815at170949.png](./assets/Screenshot%202022-08-15%20at%2017.09.49.png)
+   ![Screenshot20220815at165727.png](./assets/1660572658199-Screenshot%202022-08-15%20at%2016.57.27.png)
 
 ## Project setup
 
