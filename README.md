@@ -1,5 +1,7 @@
 # weather widget
 
+Implement: [https://codesandbox.io/s/weather-widget-2xd5f9](https://)
+
 Implement a widget that displays the weather in the specified cities.
 
 1. Users should be able to add this widget to their websites as simple as inserting the snippet into an HTML-page:
