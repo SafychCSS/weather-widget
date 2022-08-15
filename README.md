@@ -23,6 +23,9 @@ Implement a widget that displays the weather in the specified cities.
 
    ![Screenshot20220815at165727.png](./assets/1660572658199-Screenshot%202022-08-15%20at%2016.57.27.png)
 
+
+   ![Screenshot20220815at170949.png](./assets/Screenshot%202022-08-15%20at%2017.09.49.png)
+
 ## Project setup
 
 ```
